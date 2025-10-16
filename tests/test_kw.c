@@ -55,7 +55,7 @@ int main(void)
         && (memcmp(wrapRefResult, wrap, 24) == 0)
         && (memcmp(unwrap, key, 16) == 0))
     {
-        return 0;
+        return 1;
     }
     else
     {
