@@ -31,3 +31,11 @@ int AES_KW_unwrap(const struct AES_KW_ctx* ctx,
 
 ## Acknowledgment
 This project was inspired by [AES CMAC implementation](https://github.com/elektronika-ba/tiny-AES-CMAC-c) that uses the same AES library.
+
+## Other implementations
+- C
+  - [Written for OpenSSL, AES-KW with padding support](https://github.com/paulej/AESKeyWrap)
+  - [Written for Crypto++](https://github.com/ikluft/AESKeyWrap)
+  - [hostap](https://git.w1.fi/cgit/hostap/tree/src/crypto/aes-wrap.c)
+- Python
+  - [Also adds padding support](https://github.com/kurtbrose/aes_keywrap)
