@@ -34,8 +34,8 @@ This project was inspired by [AES CMAC implementation](https://github.com/elektr
 
 ## Other implementations
 - C
-  - [Written for OpenSSL, AES-KW with padding support](https://github.com/paulej/AESKeyWrap)
-  - [Written for Crypto++](https://github.com/ikluft/AESKeyWrap)
+  - [Written for OpenSSL, contains RFC 5649 padding support](https://github.com/paulej/AESKeyWrap)
+  - [Written for Crypto++, contains RFC 5649 padding support](https://github.com/ikluft/AESKeyWrap)
   - [hostap](https://git.w1.fi/cgit/hostap/tree/src/crypto/aes-wrap.c)
 - Python
-  - [Also adds padding support](https://github.com/kurtbrose/aes_keywrap)
+  - [Also contains RFC 5649 padding support](https://github.com/kurtbrose/aes_keywrap)
