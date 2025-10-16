@@ -58,8 +58,6 @@ int AES_KW_wrap(const struct AES_KW_ctx* ctx, const uint8_t *plaintext, uint32_t
             // B = AES(K, A | R[i])
             (void) memcpy(b, a, 8);
             (void) memcpy(&b[8], &ciphertext[8 + (i * 8)], 8);
-
-            //AES_ECB_Encrypt(kek, b, b, kek_bits);
             ctx->aes_encrypt_callback(b);
 
             // A = MSB(64, B) ^ t
@@ -109,8 +107,6 @@ int AES_KW_unwrap(const struct AES_KW_ctx* ctx, const uint8_t *ciphertext, uint3
             (void) memcpy(b, a, 8);
             xor_with_counter(b, t);
             (void) memcpy(&b[8], &plaintext[i * 8], 8);
-
-            //AES_ECB_Decrypt(kek, b, b, kek_bits);
             ctx->aes_decrypt_callback(b);
 
             // A = MSB(64, B)
