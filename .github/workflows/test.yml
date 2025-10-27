@@ -1,4 +1,4 @@
-name: Build and Test AES-KW
+name: CI
 
 on:
   push:
