@@ -4,10 +4,10 @@ Lightweight AES Key Wrap implementation as per [RFC 3394](https://datatracker.ie
 
 It was written as part of an **[IEEE 802.1X/MKA (MACsec Key Agreement)](https://en.wikipedia.org/wiki/IEEE_802.1X)** implementation, where AES-KW is used for secure key transport.
 
-Designed to be used with [tiny-AES-c](https://github.com/kokke/tiny-AES-c) library (only **AES-128** mode has been tested).
+Designed to be used with [tiny-AES-c](https://github.com/khevessy/tiny-AES-c) library &#8211; fork enabling runtime selection of key width.
 
 ## Tests
-`tests/` subdirectory contains a reference test against a RFC 3394 test vector for wrapping 128 bits of Key Data with a 128-bit KEK.
+`tests/` subdirectory contains a reference test against all the [RFC 3394 test vectors](https://datatracker.ietf.org/doc/html/rfc3394#section-4).
 
 ## API
 ```C
