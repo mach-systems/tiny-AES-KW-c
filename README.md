@@ -1,3 +1,5 @@
+[![CI](https://github.com/mach-systems/tiny-AES-KW-c/actions/workflows/test.yml/badge.svg)](https://github.com/mach-systems/tiny-AES-KW-c/actions/workflows/test.yml)
+
 # Tiny AES KW in C
 
 Lightweight AES Key Wrap implementation as per [RFC 3394](https://datatracker.ietf.org/doc/html/rfc3394).
