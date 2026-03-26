@@ -29,7 +29,6 @@ struct AES_KW_ctx
  * @param  ctx Context with encryption / decryption functions
  * @param  aes_encrypt_callback Function to be called for AES ECB encryption
  * @param  aes_decrypt_callback Function to be called for AES ECB decryption
- * @retval None
  */
 void AES_KW_init_ctx(struct AES_KW_ctx* ctx, void (*aes_encrypt_callback)(uint8_t*),
                      void (*aes_decrypt_callback)(uint8_t*));
