@@ -42,8 +42,8 @@ void AES_KW_init_ctx(struct AES_KW_ctx* ctx, void (*aes_encrypt_callback)(uint8_
  * @param ciphertext  Output buffer (must be pt_len + 8 bytes)
  * @return            Length of wrapped key in bytes, or 0 on error
  */
-int AES_KW_wrap(const struct AES_KW_ctx* ctx, const uint8_t *plaintext, uint32_t pt_len,
-                uint8_t *ciphertext);
+uint32_t AES_KW_wrap(const struct AES_KW_ctx* ctx, const uint8_t *plaintext, uint32_t pt_len,
+                     uint8_t *ciphertext);
 
 /**
  * AES Key Unwrap.
@@ -53,8 +53,8 @@ int AES_KW_wrap(const struct AES_KW_ctx* ctx, const uint8_t *plaintext, uint32_t
  * @param plaintext   Output buffer (must be ct_len - 8 bytes)
  * @return            Length of unwrapped key in bytes, or 0 on error/integrity failure
  */
-int AES_KW_unwrap(const struct AES_KW_ctx* ctx, const uint8_t *ciphertext, uint32_t ct_len,
-                  uint8_t *plaintext);
+uint32_t AES_KW_unwrap(const struct AES_KW_ctx* ctx, const uint8_t *ciphertext, uint32_t ct_len,
+                       uint8_t *plaintext);
 
 
 
