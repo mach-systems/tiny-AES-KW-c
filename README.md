@@ -17,13 +17,13 @@ void AES_KW_init_ctx(struct AES_KW_ctx* ctx,
                      void (*aes_encrypt_callback)(uint8_t*),
                      void (*aes_decrypt_callback)(uint8_t*));
 
-int AES_KW_wrap(const struct AES_KW_ctx* ctx,
-                const uint8_t *plaintext, uint32_t pt_len,
-                uint8_t *ciphertext);
+uint32_t AES_KW_wrap(const struct AES_KW_ctx* ctx,
+                     const uint8_t *plaintext, uint32_t pt_len,
+                     uint8_t *ciphertext);
 
-int AES_KW_unwrap(const struct AES_KW_ctx* ctx,
-                  const uint8_t *ciphertext, uint32_t ct_len,
-                  uint8_t *plaintext);
+uint32_t AES_KW_unwrap(const struct AES_KW_ctx* ctx,
+                       const uint8_t *ciphertext, uint32_t ct_len,
+                       uint8_t *plaintext);
 ```
 
 ## Usage
